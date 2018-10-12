@@ -5,6 +5,7 @@ const adminPage = document.querySelector('.admin');
 const returnI = document.querySelector('#returnInit');
 const btnAdmin = document.querySelector('#btnAdmin');
 const returnI2 = document.querySelector('#returnInit2');
+const c = document.getElementById('contenido');
 
 btnVisitor.addEventListener('click', () => {
   main.classList.add('back');
@@ -72,7 +73,6 @@ window.addEventListener("DOMContentLoaded", function() {
  
 	document.getElementById('tomar').addEventListener('click', function() {
     context.drawImage(video, 0, 0, 480, 360);
-    const c = document.getElementById('contenido');
    	c.innerText = canvas.toDataURL();
   });
   // esto funcionará solamente si tienen una etiqueta button o similar con el id "detener".
@@ -82,3 +82,4 @@ document.getElementById('detener').addEventListener('click', function() {
 	localStream.getVideoTracks()[0].stop();
 });
 }, false);
+

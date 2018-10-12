@@ -14,6 +14,7 @@ const db = firebase.firestore();
 db.settings({
   timestampsInSnapshots :true
 });
+//const cf = firebase.storage();
 
 //creo los elementos q se van a mostrar por cada doc
 const infoVisit = (doc)=>{
@@ -24,12 +25,15 @@ const infoVisit = (doc)=>{
   const email = document.createElement('p');
   const hour = document.createElement('p');
   const cross = document.createElement('div');
+  const img = new Image();
 
 
   box.setAttribute('id', doc.id);
   box.setAttribute('class', 'infoVisit');
   cross.setAttribute('class', 'center-align btn-delete');
   box.setAttribute('style', 'border: 1px solid black;');
+  img.src = doc.data().image;
+  console.log(doc.data().image);
   name.textContent = doc.data().name;
   date.textContent = doc.data().date;
   dni.textContent = doc.data().dni;
@@ -42,6 +46,7 @@ const infoVisit = (doc)=>{
   box.appendChild(dni);
   box.appendChild(email);
   box.appendChild(hour);
+  box.appendChild(img);
   box.appendChild(cross);
 
   dataVisit.appendChild(box);
@@ -72,12 +77,16 @@ form.addEventListener('submit', (e)=>{
     dni: form.dni.value,
     email: form.email.value,
     hour: form.hour.value,
+    image: form.image.value,
+    host: form.host.value,
   });
   form.name.value="";
   form.date.value="";
   form.dni.value=null;
   form.email.value="";
   form.hour.value="";
+  form.image.value="";
+  form.host.value='';
   M.toast({html: 'Notificación enviada'})
 })
 
@@ -87,6 +96,8 @@ db.collection('visitors').orderBy('name').onSnapshot(snapshot => {
   changes.forEach(change =>{
     if(change.type === 'added'){
       infoVisit(change.doc);
+      let obj = change.doc.data();
+      sendEmail(obj);
     } else if(change.type === 'removed'){
       let visit = dataVisit.querySelector(`#${change.doc.id}`);
       dataVisit.removeChild(visit);

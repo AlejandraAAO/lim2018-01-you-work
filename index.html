@@ -60,10 +60,10 @@
               <label for="hour">Hora</label>
             </div>
             <div class="input-field col s12 m6 l6">
-              <select class="icons">
+              <select class="icons" id="host" name="host">
                 <option value="" disabled selected>Nombres</option>
                 <option value="la_poderosa_990@hotmail.com" data-icon="/img/user2.png" class="left">Nugget</option>
-                <option value="" data-icon="/img/user1.png" class="left">Hans</option>
+                
 
               </select>
               <label>Anfitrión</label>
@@ -73,7 +73,7 @@
               <label for="email">E-mail</label>
             </div>
 
-            <!-- <br>
+            <br>
           <div class="col s12 m6 l6">
             <video id="video" width="200" height="200" autoplay></video>
           </div> 
@@ -85,8 +85,8 @@
                 class="material-icons right">add_a_photo</i></a>
               <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn" id="detener">Detener<i
                 class="material-icons right">stop_screen_share</i></a>
-              <textarea id="contenido" style="width:100%" ></textarea>
-          </div> -->
+              <textarea id="contenido" name="image" type="text" style="width:100%" ></textarea>
+          </div>
             <div class="col s12 m6 offset-m3">
               <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn" type="submit" name="action"
                 id="data-visitor">Guardar
@@ -101,6 +101,7 @@
               <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn" name="back" id="returnInit">Regresar
                 al inicio
                 <i class="material-icons right">arrow_back</i>
+                
         </div>
       </div>
     </div>
@@ -125,6 +126,7 @@
 
   <script src="/js/jquery-3.3.1.min.js"></script>
   <script src="/js/materialize.min.js"></script>
+  <script src="/js/message.js"></script>
   <script src="/js/data.js"></script>
   <script src="/js/app.js"></script>
 </body>
