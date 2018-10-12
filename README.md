@@ -8,31 +8,11 @@ El registro de visitantes en una empresa en América Latina es un proceso tedios
 
 En este proyecto la empresa de coworking donde opera Laboratoria en tu ciudad ha decidido contratarte a ti y a dos compañeras para reinventar su proceso de registro de visitantes. Con la entrada de [WeWork](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwilrK_T5KjcAhWCj7MKHexzAEgYABAAGgJxbg&ohost=www.google.cl&cid=CAASE-RoAxXTp1Cd0ErxEHpPSGuF4Hk&sig=AOD64_38ykNPf0QRtI9n4CFtpQpth-MrNQ&q=&ved=0ahUKEwjswKvT5KjcAhVkU98KHUcYCeMQ0QwIJA&adurl=) al mercado latinoamericano, tienen mucha más competencia y necesitan invertir en tecnología para mejorar su servicio; el registro de visitantes es un primer acercamiento. Te dan la referencia de [Envoy](https://envoy.com/) en EEUU (un servicio que ofrece un sistema digital de registro de visitantes) y ustedes tienen que desarrollar una versión mínima viable (ver anexo I).
 
-## Objetivos de aprendizaje
-
-El objetivo principal de este proyecto es que pongas en práctica todo lo aprendido durante el common core, con foco en la calidad,trabajando de manera individual y presentando tu solución a una audiencia.
-
-### Consideraciones generales
-
-Para completar este proyecto deberás trabajar de manera individual y seguir las siguientes consideraciones:
-
-- Implementar la interfaz de usuario diseñada (HTML/CSS/JS).
-- Todas los desarrollos deben incluir pruebas unitarias.
-
-## Planificación inicial
-
-Es muy importante que al dividir/distribuir/repartir el trabajo, lo hagas pensando de manera ágil y no en cascada [¡eso se parece a la organización del trabajo industrial!](https://media.giphy.com/media/OQ872dEsRi8cU/source.gif). Recuerda que eres la responsables del producto final y debes tener un producto funcional y que se vea bien.
-
-### TIPS
-
-- Recuerda a nuestras nuevas BFFs, [las historias de usuario](http://jmbeas.es/guias/historias-de-usuario/)
-- Si no tienes idea cómo podría verse tu producto, un prototipado en lápiz y papel de las vistas es de mucha ayuda.
-- ¿Estás segura de que quieren seguir invirtiendo más minutos de tu vida (que no volverán) en discutir los colores del logotipo? [Aquí hay algo que te puede ayudar a decidir](https://play.google.com/store/apps/details?id=com.flip.war_daddy.flip_coin).
 
 ## Detalles sobre la implementación
 
-- La lógica del proyecto debe estar implementada completamente en JavaScript (ES6), HTML y CSS.
-- Está permitido usar librerías o frameworks tanto de CSS como de JS, pero no es obligatorio. Elige bien las batallas que quieres luchar.
+- La lógica del proyecto debe esta implementada completamente en JavaScript (ES6), HTML y CSS.
+- Uso el framework de CSS Materialize.
 - En este proyecto, no contamos con un boilerplate, por lo que deberás definir la estructura de carpetas y archivos que consideres necesaria, puedes guiarte de los proyectos anteriores.
 - Los tests y el setup necesario para ejecutarlos serán hechos enteramente por ti.
 - Para armar las interfaces visuales utiliza como base alguna de estas guías de componentes:
