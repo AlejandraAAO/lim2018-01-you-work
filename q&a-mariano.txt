@@ -1,0 +1,22 @@
+1. q es un componente?
+concepto propio de las interfaces
+es un porcion de una interfaz.
+tiene su componente visual 
+forma de encapsular una funcionalidad.
+2. jest mocha => ambos test runers
+runing test: describe=suite it=test
+chai : libreria de aserciones
+3.
+const : maneja referencias, numero q esta guardado en memoria de 
+la variable.
+let : modifica referencia
+para todo const
+4. como traer info de una api en react
+componentwillmount
+5. cname para gh-pages y cambiar el nombre
+hosting gratuito => now o netlfy
+6. sass es un traspilador
+desarrollo en un lenguaje y luego lo inyecto 
+jcc estilos en javascript
+7. que herramientas voy a usar es la arquitectura de un proyecto
+8. 

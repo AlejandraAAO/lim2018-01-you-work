@@ -1,0 +1,55 @@
+.wall-img {
+ margin-top:8rem;
+ height: auto;
+ align-items: center;
+ align-content: center;
+}
+.wall-btn {
+background-color: #fed102;
+color:#020015;
+margin: 1rem 5rem;
+}
+.wall-btn:hover {
+  background-color: #020015;
+  color:#f3f3f5;
+}
+
+.wall-title {
+  color:#020015;
+  margin-top: 0rem;
+}
+.register {
+  background-color: #fed102;
+  height:100%;
+  width:100%;
+  display:table;
+}
+.back {
+  display: none;
+}
+.register-menu {
+  color:#020015 !important;
+}
+.input-field>label {
+  color: #020015;
+  
+}
+input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+  border-bottom:1px solid #020015;
+} 
+.infoVisit {
+  margin: 1rem 0rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.btn-delete {
+  background-color: #fed102;
+}
+
+#test1 {
+  margin-top: 2rem;
+  padding-bottom: 100%;
+}
+.head {
+  display:table-row;
+}

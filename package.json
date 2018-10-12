@@ -1,0 +1,19 @@
+{
+  "name": "lim2018-01-you-work",
+  "version": "1.0.0",
+  "description": "registro de visitantes",
+  "main": "index.js",
+  "repository": "https://github.com/AlejandraAAO/lim2018-01-you-work.git",
+  "author": "AlejandraAAO <aventurero_7_20@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  },
+  "scripts": {
+    "pretest": "eslint src test"
+  }
+}
