@@ -1,5 +1,19 @@
+html, body {
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+.main {
+  background-image: url(/img/fondo.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  flex: 1;
+}
 .wall-img {
- margin-top:8rem;
+ margin-top:3rem;
  height: auto;
  align-items: center;
  align-content: center;
@@ -14,12 +28,23 @@ margin: 1rem 8rem;
   color:#f3f3f5;
 }
 
-.wall-title {
+.wall-btn2 {
+  background-color: #020015;
+  color:#f3f3f5;
+  margin: 1rem 8rem;
+  }
+  .wall-btn2:hover {
+  background-color: #fed102;
   color:#020015;
+  }
+
+.wall-title {
+  color:#f3f3f5;
   margin-top: 0rem;
+  font-weight: bold;
 }
 .register {
-  background-color: #fed102;
+  background-color: #f3f3f5;
   height:100%;
   width:100%;
   display:table;
@@ -34,7 +59,8 @@ margin: 1rem 8rem;
   color: #020015;
   
 }
-input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) {
+input[type=text]:not(.browser-default), 
+input[type=email]:not(.browser-default) {
   border-bottom:1px solid #020015;
 } 
 .infoVisit {
@@ -52,4 +78,7 @@ input[type=text]:not(.browser-default), input[type=email]:not(.browser-default) 
 }
 .head {
   display:table-row;
+}
+.head-title {
+  background-color: #fed102;
 }

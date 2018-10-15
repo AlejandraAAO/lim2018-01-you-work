@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase-firestore.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,11 +22,14 @@
 
           <img class="responsive-img wall-img" src="img/comu.jpg" alt="">
           <h3 class="wall-title center-align">YouWork</h3>
+        </div>
+        <div class="col s12 m6 offset-m3">
           <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn" id="btnVisitor">Visitante<i class="material-icons right">send</i></a>
-          <hr>
+          <hr>        
+        </div>
+        
+        <div class="col s12 m6 offset-m3">
           <a class="waves-effect waves-light btn center-align z-depth-1 wall-btn" id="btnAdmin">Administrador<i class="material-icons right">import_contacts</i></a>
-
-
         </div>
       </div>
     </div>
@@ -33,7 +37,7 @@
   <div class="register back">
 
     <div class="row head">
-      <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+      <ul class="tabs tabs-fixed-width tab-demo z-depth-1 head-title">
         <li class="tab"><a href="#test1" class="register-menu">Tus datos</a></li>
 
       </ul>
@@ -44,64 +48,59 @@
         <div class="container">
           <form id="data-form">
             <div class="input-field col s12 m6 l6">
-              <input id="last_name" type="text" name="name" class="validate">
+              <input id="last_name" type="text" name="name" class="validate" required>
               <label for="last_name">Nombre Completo</label>
             </div>
             <div class="input-field col s12 m6 l6">
-              <input id="dni" type="text" name="dni" class="validate">
+              <input id="dni" type="text" name="dni" class="validate" required>
               <label for="dni">Documento de Identidad</label>
             </div>
             <div class="input-field col s12 m6 l6">
-              <input id="fecha" type="text" name="date" class="datepicker">
+              <input id="fecha" type="text" name="date" class="datepicker" required>
               <label for="fecha">Fecha</label>
             </div>
             <div class="input-field col s12 m6 l6">
-              <input id="hour" type="text" name="time" class="timepicker">
+              <input id="hour" type="text" name="time" class="timepicker" required>
               <label for="hour">Hora</label>
             </div>
             <div class="input-field col s12 m6 l6">
-              <select class="icons" id="host" name="host">
+              <select class="icons" id="host" name="host" required>
                 <option value="" disabled selected>Nombres</option>
                 <option value="la_poderosa_990@hotmail.com" data-icon="/img/user2.png" class="left">Nugget</option>
-                
-
               </select>
               <label>Anfitrión</label>
             </div>
-            <div class="input-field col s12 m6 offset-m3">
-              <input id="email" type="email" name="email" class="validate">
+            <div class="input-field col s12 m6 l6">
+              <input id="email" type="email" name="email" class="validate" required>
               <label for="email">E-mail</label>
             </div>
 
             <br>
-          <div class="col s12 m6 l6">
-            <video id="video" width="200" height="200" autoplay></video>
-          </div> 
-          <div class="col s12 m6 l6">
-            <canvas id="canvas" width="200" height="200"></canvas>   
-          </div>
-          <div class="col s12 m6 offset-m3" >
-              <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn" id="tomar">Capturar<i
-                class="material-icons right">add_a_photo</i></a>
-              <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn" id="detener">Detener<i
-                class="material-icons right">stop_screen_share</i></a>
-              <textarea id="contenido" name="image" type="text" style="width:100%" ></textarea>
-          </div>
+            <div class="col s12 m6 l6">
+              <video id="video" width="200" height="200" autoplay></video>
+            </div>
+            <div class="col s12 m6 l6">
+              <canvas id="canvas" width="200" height="200"></canvas>
+            </div>
             <div class="col s12 m6 offset-m3">
-              <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn" type="submit" name="action"
+              <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn2" id="tomar">Capturar<i class="material-icons right">add_a_photo</i></a>
+              <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn2" id="detener">Detener<i class="material-icons right">stop_screen_share</i></a>
+              <textarea id="contenido" name="image" type="text" style="width:100%"></textarea>
+            </div>
+            <div class="col s12 m6 offset-m3">
+              <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn2" type="submit" name="action"
                 id="data-visitor">Guardar
                 <i class="material-icons right">send</i>
               </button>
             </div>
-            
-              </button>
-            </div>
-          </form>
-          <div class="col s12 m6 offset-m3">
-              <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn" name="back" id="returnInit">Regresar
-                al inicio
-                <i class="material-icons right">arrow_back</i>
-                
+
+            </button>
+        </div>
+        </form>
+        <div class="col s12 m6 offset-m3">
+          <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn2" name="back" id="returnInit">Inicio
+            <i class="material-icons right">arrow_back</i>
+
         </div>
       </div>
     </div>
@@ -115,10 +114,10 @@
 
         </div>
         <div class="col s12 m6 offset-m3">
-            <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn" name="back" id="returnInit2">Regresar
-              al inicio
-              <i class="material-icons right">arrow_back</i>
-            </button>
+          <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn" name="back" id="returnInit2">Regresar
+            al inicio
+            <i class="material-icons right">arrow_back</i>
+          </button>
         </div>
       </div>
     </div>
