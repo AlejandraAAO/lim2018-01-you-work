@@ -6,14 +6,14 @@ html, body {
   font-family: 'Quicksand', sans-serif;
 }
 .main {
-  background-image: url(/img/fondo.png);
+  background-image: url(../img/fondo.png);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   flex: 1;
 }
 .wall-img {
- margin-top:3rem;
+ margin: 3rem auto 0rem auto;
  height: auto;
  align-items: center;
  align-content: center;
@@ -48,6 +48,11 @@ margin: 1rem 8rem;
   height:100%;
   width:100%;
   display:table;
+}
+
+.box-center {
+  display: flex;
+  flex-direction: column;
 }
 .back {
   display: none;

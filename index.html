@@ -18,17 +18,14 @@
   <div class="main">
     <div class="container">
       <div class="row">
-        <div class="col s12 m6 offset-m3">
+        <div class="col s12 m6 offset-m3 box-center">
 
           <img class="responsive-img wall-img" src="/img/comu.jpg" alt="">
           <h3 class="wall-title center-align">YouWork</h3>
         </div>
-        <div class="col s12 m6 offset-m3">
+        <div class="col s12 m6 offset-m3 box-center">
           <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn" id="btnVisitor">Visitante<i class="material-icons right">send</i></a>
-          <hr>        
-        </div>
-        
-        <div class="col s12 m6 offset-m3">
+          <hr>         
           <a class="waves-effect waves-light btn center-align z-depth-1 wall-btn" id="btnAdmin">Administrador<i class="material-icons right">import_contacts</i></a>
         </div>
       </div>
@@ -82,12 +79,12 @@
             <div class="col s12 m6 l6">
               <canvas id="canvas" width="200" height="200"></canvas>
             </div>
-            <div class="col s12 m6 offset-m3">
+            <div class="col s12 m6 offset-m3 box-center">
               <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn2" id="tomar">Capturar<i class="material-icons right">add_a_photo</i></a>
-              <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn2" id="detener">Detener<i class="material-icons right">stop_screen_share</i></a>
-              <textarea id="contenido" name="image" type="text" style="width:100%"></textarea>
+              <a class="waves-effect waves-light btn center-align z-depth-5 wall-btn2" id="detener" style='display:none;'>Detener<i class="material-icons right">stop_screen_share</i></a>
+              <textarea id="contenido" name="image" type="text" style="width:100%; display: none"></textarea>
             </div>
-            <div class="col s12 m6 offset-m3">
+            <div class="col s12 m6 offset-m3 box-center">
               <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn2" type="submit" name="action"
                 id="data-visitor">Guardar
                 <i class="material-icons right">send</i>
@@ -98,8 +95,11 @@
         </div>
         </form>
         <div class="col s12 m6 offset-m3">
-          <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn2" name="back" id="returnInit">Inicio
+          <div class="container box-center">
+            <button class="btn waves-effect waves-light center-align z-depth-5 wall-btn2" name="back" id="returnInit">Inicio
             <i class="material-icons right">arrow_back</i>
+          </div>
+         
 
         </div>
       </div>
